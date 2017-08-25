@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ClassDiagram>
+    <Class name="com.teradata.exercise.controller.AlbumController"
+        x="29" y="232">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+        <Association
+            destinationClassName="com.teradata.exercise.service.AlbumService"
+            endpointName="albumService" kind="Simple"/>
+        <Communication destinationClassName="com.teradata.exercise.service.AlbumService"/>
+    </Class>
+    <Class name="com.teradata.exercise.service.AlbumService" x="79" y="79">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+    </Class>
+    <Class name="com.teradata.exercise.common.KeyGenUtil" x="542" y="142">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+    </Class>
+    <Class name="com.teradata.exercise.service.AlbumServiceImpl" x="311" y="16">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+        <Extension destinationClassName="com.teradata.exercise.service.AlbumService"/>
+        <Association
+            destinationClassName="com.teradata.exercise.common.KeyGenUtil"
+            endpointName="keyGenUtil" kind="Simple"/>
+        <Association
+            destinationClassName="com.teradata.exercise.db.repository.AlbumRepository"
+            endpointName="albumRepository" kind="Simple"/>
+        <Communication destinationClassName="com.teradata.exercise.common.KeyGenUtil"/>
+    </Class>
+    <Class name="com.teradata.exercise.db.repository.AlbumRepository"
+        x="638" y="48">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+    </Class>
+</ClassDiagram>
